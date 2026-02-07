@@ -1,0 +1,192 @@
+@font-face {
+  font-family: "SuperDario";
+  src: url("../fonts/super-dario-advance-4.otf/super-dario-advance-4.otf") format("truetype");
+}
+
+*{
+    margin: 0;
+    border: 0;
+    box-sizing: border-box;
+    font-family: "SuperDario", sans-serif;
+    text-transform: uppercase;
+}
+body{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-image: url(../images/bg.svg);
+    background-size:cover ;
+    min-height: 100vh;
+}
+.pages-container{
+    position: fixed;
+    min-width: 100%;
+    height: 100%;
+    top: 0;
+    background: url("../images/bg.svg");
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    overflow-y: auto;
+    z-index: 10;
+}
+.start-page{
+    align-self: center;
+    text-align: center;
+    padding: 20px;
+    width: 600px;
+}
+.start-page button{
+    cursor: pointer;
+    background: transparent;
+    margin-left: 40px;
+}
+.categories-page{
+    padding: 20px;
+    margin: 50px;
+    text-align: center;
+    display: none;
+}
+.categories-page .categories{
+    margin-top: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 70px;
+    flex-wrap: wrap;
+}
+.categories .card{
+    cursor: pointer;
+    width: 230px;
+    height: 180px;
+    margin: 5px;
+    padding-top: 40px;
+    background: #ffde26;
+    border-radius: 20px;
+    box-shadow: 50px 10px 15px rgba(0, 0, 0, 0.3);
+    transition: width 2s, height 4s, background-color 0.2s;
+}
+.categories .card:hover{
+    width: 240px;
+    height: 190px;
+    background-color: #e6ba10;
+}
+.card img{
+    margin-top: -50px;
+}
+.result-page{
+    align-self: center;
+    text-align: center;
+    padding: 20px;
+    display: none;
+}
+.result-page img{
+    margin: 20px;
+}
+.result-page h3{
+    background: black;
+    color: white;
+    padding: 4px;
+    width: 300px;
+    margin: auto;
+}
+.result-page button{
+    padding: 10px;
+    margin: 20px;
+    cursor: pointer;
+    border-radius: 10px;
+    background: transparent;
+}
+
+.container1{
+    padding: 10px;
+}
+.container1 .header{
+    display: flex;
+    justify-content: center;
+    margin-top: 40px;
+    gap: 50px;
+}
+.container1 .header .home{
+    background: transparent;
+    cursor: pointer;
+}
+
+.container1 .section1{
+    display: flex;
+    justify-content: center;
+    margin-top: 80px;
+    flex-wrap: wrap;
+    gap: 10px;
+    text-align: center;
+}
+.section1 .word-category{
+    background: black;
+    color: white;
+    padding: 7px;
+    width: 300px;
+    margin: auto;
+}
+.section2 img{
+}
+.container2{
+    padding: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 100px;
+    flex-wrap: wrap;
+}
+.section3 .word-guesses{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    list-style: none;
+    margin-bottom: 50px;
+    gap: 30px;
+    margin: auto;
+}
+.section3 .word-guesses .letter-guesses{
+    width: 30px;
+    border-bottom: 3px solid black;
+}
+.section3 .word-guesses .gussed{
+    background: black;
+    width: 50px;
+    color: white;
+    padding: 4px;
+    font-size: 2.5em;
+    border-bottom: transparent;
+    margin-top: -40px;
+    text-align: center;
+}
+.section3 .guesses-left{
+    text-align: center;
+    background: black;
+    color: white;
+    width: 300px;
+    padding: 4px;
+    margin: 15px auto;
+}
+
+.container2 .section3 .keyboard{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    background: black;
+    padding: 5px;
+}
+
+.keyboard button{
+    width: calc(100% / 9 - 4px);
+    padding: 5px;
+    margin: 2px;
+    cursor: pointer;
+    background: yellow;
+    border-radius: 5px;
+}
+
+.keyboard button:hover{
+    background: rgb(249, 249, 132);
+}
