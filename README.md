@@ -5,7 +5,9 @@ A modern **Hangman game** inspired by the **Lego universe**, built using core we
 ---
 
 ##  Demo Video
-> https://github.com/user-attachments/assets/4f3d2abb-9e11-46bd-a23b-dbc0009c3c5d
+
+> https://github.com/user-attachments/assets/dd676268-c21c-4d58-a667-10e6eca079af
+
 ---
 
 ##  Features
