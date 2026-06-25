@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HangMan Game</title>
+    <link rel="stylesheet" href="./assets/styles/style.css" />
+</head>
+
+<body>
+    <div class="pages-container">
+        <div class="start-page">
+            <img src="./assets/images/font.png" alt="hangman" width="600">
+            <button><img src="./assets/images/startBtn.png" alt="Sart Game Button" width="200px"></button>
+        </div>
+        <div class="categories-page">
+            <img src="./assets/images/category-font.png" alt="" width="400">
+            <div class="categories"></div>
+        </div>
+        <div class="result-page">
+            <img src="./assets/images/game-over.png" alt="you did it" width="300"><br>
+            <img src="./assets/images/sad.png" alt="game over" width="200">
+            <h3>The word is: </h3>
+            <button><img src="./assets/images/playAgain.png" alt="" width="250px"></button>
+        </div>
+    </div>
+
+    <div class="container1">
+        <div class="header">
+            <button class="home">
+                <svg width="60px" height="60px" viewBox="-1.6 -1.6 19.20 19.20" fill="none" xmlns="http://www.w3.org/2000/svg" stroke="#000000" transform="matrix(1, 0, 0, 1, 0, 0)"><g id="SVGRepo_bgCarrier" stroke-width="0"></g><g id="SVGRepo_tracerCarrier" stroke-linecap="round" stroke-linejoin="round" stroke="#000000" stroke-width="3.2"> <path fill-rule="evenodd" clip-rule="evenodd" d="M8 0L0 6V8H1V15H4V10H7V15H15V8H16V6L14 4.5V1H11V2.25L8 0ZM9 10H12V13H9V10Z" fill="#ffffff"></path> </g><g id="SVGRepo_iconCarrier"> <path fill-rule="evenodd" clip-rule="evenodd" d="M8 0L0 6V8H1V15H4V10H7V15H15V8H16V6L14 4.5V1H11V2.25L8 0ZM9 10H12V13H9V10Z" fill="#ffffff"></path> </g></svg>
+            </button>
+            <h1 class="logo"><img src="./assets/images/font.png" alt="" width="300"></h1>
+        </div>
+        <div class="section1">
+            <h3 class="word-category">Programming</h3>
+        </div>
+        <div class="container2">
+            <div class="section2">
+                <img src="./assets/images/hangman-6.svg" alt="hangman" width="400">
+            </div>
+            <div class="section3">
+                <ul class="word-guesses">
+                    <!--<li class="letter-guesses gussed">A</li>-->
+                </ul>
+                <br><br>
+                <h4 class="guesses-left">Gusses Left: 6 / 6</h4>
+                <div class="keyboard"></div>
+            </div>
+        </div>
+    </div>
+
+
+    <script src="./scripts/script.js"></script>
+</body>
+
+</html>
