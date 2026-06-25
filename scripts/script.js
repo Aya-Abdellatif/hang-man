@@ -20,7 +20,7 @@ for(var k = 0; k < 6; k++){
     var cardTitle = document.createElement("h3");
     cardTitle.textContent = categories[k];
     var cardImg = document.createElement("img");
-    cardImg.src = `../assets/images/category-${k}.svg`;
+    cardImg.src = `/hang-man/assets/images/category-${k}.svg`;
     cardImg.alt = "image category";
     cardImg.width = "200";
     card.insertAdjacentElement("beforeend", cardTitle);
@@ -68,7 +68,7 @@ function chooseCategory(){
     var guessesLeft = document.querySelector(".guesses-left");//13
     var currGussesLeft = 6;
     guessesLeft.textContent = "Gusses Left: " + currGussesLeft + " / 6";
-    hangmanImg.src = `../assets/images/hangman-${6 - currGussesLeft}.svg`;
+    hangmanImg.src = `/hang-man/assets/images/hangman-${6 - currGussesLeft}.svg`;
     var result = document.querySelector(".result-page");
     result.children[4].addEventListener("click", function(){
         document.querySelector(".result-page").style.display = "none";
@@ -98,15 +98,15 @@ function chooseCategory(){
                 currGussesLeft--;
                 console.log("Current Gusses Left: " + currGussesLeft);
                 guessesLeft.textContent = "Gusses Left: " + currGussesLeft + " / 6";
-                hangmanImg.src = `../assets/images/hangman-${6 - currGussesLeft}.svg`;
+                hangmanImg.src = `/hang-man/assets/images/hangman-${6 - currGussesLeft}.svg`;
             }
         }
 
         if(flag2){
             console.log("you did it");
             console.log(result.children)
-            result.children[0].src = "../assets/images/you-did-it.png";
-            result.children[2].src = "../assets/images/congrats.png"
+            result.children[0].src = "/hang-man/assets/images/you-did-it.png";
+            result.children[2].src = "/hang-man/assets/images/congrats.png"
             result.children[2].alt="congrats";
             console.log(result.children[2]);
             result.children[3].textContent = "The word is: " + currWord;
@@ -116,8 +116,8 @@ function chooseCategory(){
         else if(currGussesLeft === 0){
             console.log("game over");
             console.log(result.children)
-            result.children[0].src = "../assets/images/game-over.png";
-            result.children[2].src = "../assets/images/sad.png";
+            result.children[0].src = "/hang-man/assets/images/game-over.png";
+            result.children[2].src = "/hang-man/assets/images/sad.png";
             result.children[2].alt="game over";
             console.log(result.children[3]);
             result.children[3].textContent = "The word is: " + currWord;
