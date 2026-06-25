@@ -2,6 +2,7 @@
 
 A modern **Hangman game** inspired by the **Lego universe**, built using core web technologies with a strong focus on interactivity, playful visuals, and a retro gaming vibe.
 
+Live Demo: https://aya-abdellatif.github.io/hang-man/
 ---
 
 ##  Demo Video
